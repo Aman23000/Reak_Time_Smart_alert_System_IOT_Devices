@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.3">
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/NotificationManager.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="7" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="9" column="5" severity="error" message="Class &apos;NotificationManager&apos; looks like designed for extension (can be subclassed), but the method &apos;addObserver&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;NotificationManager&apos; final or making the method &apos;addObserver&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="9" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="9" column="29" severity="error" message="Parameter observer should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="13" column="5" severity="error" message="Class &apos;NotificationManager&apos; looks like designed for extension (can be subclassed), but the method &apos;alert&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;NotificationManager&apos; final or making the method &apos;alert&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="13" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="13" column="23" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/SMSNotifier.java">
+<error line="4" column="5" severity="error" message="Class &apos;SMSNotifier&apos; looks like designed for extension (can be subclassed), but the method &apos;notify&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;SMSNotifier&apos; final or making the method &apos;notify&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="5" column="24" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/AlertStrategy.java">
+<error line="4" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/EventManager.java">
+<error line="7" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="9" column="5" severity="error" message="Class &apos;EventManager&apos; looks like designed for extension (can be subclassed), but the method &apos;logEvent&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;EventManager&apos; final or making the method &apos;logEvent&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="9" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="9" column="26" severity="error" message="Parameter event should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="13" column="5" severity="error" message="Class &apos;EventManager&apos; looks like designed for extension (can be subclassed), but the method &apos;getEventLog&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;EventManager&apos; final or making the method &apos;getEventLog&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="13" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/SmartAlertSystem.java">
+<error line="3" column="1" severity="error" message="Utility classes should not have a public or default constructor." source="com.puppycrawl.tools.checkstyle.checks.design.HideUtilityClassConstructorCheck"/>
+<error line="4" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="4" column="29" severity="error" message="Parameter args should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="17" column="29" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="23" severity="error" message="Line is longer than 80 characters (found 87)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/Event.java">
+<error line="4" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="5" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="6" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="8" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="8" column="18" severity="error" message="Parameter type should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="8" column="25" severity="error" message="&apos;type&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="8" column="31" severity="error" message="Parameter deviceId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="8" column="38" severity="error" message="&apos;deviceId&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="8" column="48" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="8" column="55" severity="error" message="&apos;message&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="14" column="5" severity="error" message="Class &apos;Event&apos; looks like designed for extension (can be subclassed), but the method &apos;getType&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Event&apos; final or making the method &apos;getType&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="14" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="18" column="5" severity="error" message="Class &apos;Event&apos; looks like designed for extension (can be subclassed), but the method &apos;getDeviceId&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Event&apos; final or making the method &apos;getDeviceId&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="18" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="22" column="5" severity="error" message="Class &apos;Event&apos; looks like designed for extension (can be subclassed), but the method &apos;getMessage&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Event&apos; final or making the method &apos;getMessage&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="22" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/NotificationObserver.java">
+<error line="4" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/EmailNotifier.java">
+<error line="4" column="5" severity="error" message="Class &apos;EmailNotifier&apos; looks like designed for extension (can be subclassed), but the method &apos;notify&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;EmailNotifier&apos; final or making the method &apos;notify&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="5" column="24" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/CriticalAlertStrategy.java">
+<error line="4" column="5" severity="error" message="Class &apos;CriticalAlertStrategy&apos; looks like designed for extension (can be subclassed), but the method &apos;escalate&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;CriticalAlertStrategy&apos; final or making the method &apos;escalate&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="5" column="26" severity="error" message="Parameter deviceId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="5" column="43" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="6" severity="error" message="Line is longer than 80 characters (found 115)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/IoTDevice.java">
+<error line="6" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="7" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="9" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="9" column="22" severity="error" message="Parameter id should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="9" column="29" severity="error" message="&apos;id&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="9" column="33" severity="error" message="Parameter eventManager should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="9" column="46" severity="error" message="&apos;eventManager&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="14" column="5" severity="error" message="Class &apos;IoTDevice&apos; looks like designed for extension (can be subclassed), but the method &apos;simulateEvent&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;IoTDevice&apos; final or making the method &apos;simulateEvent&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="14" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="16" column="40" severity="error" message="&apos;3&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="20" column="31" severity="error" message="Inner assignments should be avoided." source="com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck"/>
+<error line="21" column="31" severity="error" message="Inner assignments should be avoided." source="com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck"/>
+<error line="22" column="32" severity="error" message="Inner assignments should be avoided." source="com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/AlertManager.java">
+<error line="4" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="6" column="5" severity="error" message="Class &apos;AlertManager&apos; looks like designed for extension (can be subclassed), but the method &apos;setStrategy&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;AlertManager&apos; final or making the method &apos;setStrategy&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="6" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="6" column="29" severity="error" message="Parameter strategy should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="6" column="43" severity="error" message="&apos;strategy&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="10" column="5" severity="error" message="Class &apos;AlertManager&apos; looks like designed for extension (can be subclassed), but the method &apos;triggerAlert&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;AlertManager&apos; final or making the method &apos;triggerAlert&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="10" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck"/>
+<error line="10" column="30" severity="error" message="Parameter deviceId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="10" column="47" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+</file>
+<file name="/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/WarningAlertStrategy.java">
+<error line="4" column="5" severity="error" message="Class &apos;WarningAlertStrategy&apos; looks like designed for extension (can be subclassed), but the method &apos;escalate&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;WarningAlertStrategy&apos; final or making the method &apos;escalate&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="5" column="26" severity="error" message="Parameter deviceId should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="5" column="43" severity="error" message="Parameter message should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="6" severity="error" message="Line is longer than 80 characters (found 87)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+</checkstyle>

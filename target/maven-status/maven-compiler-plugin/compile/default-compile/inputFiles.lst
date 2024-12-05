@@ -1,0 +1,12 @@
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/AlertManager.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/AlertStrategy.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/CriticalAlertStrategy.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/EmailNotifier.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/Event.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/EventManager.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/IoTDevice.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/NotificationManager.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/NotificationObserver.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/SMSNotifier.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/SmartAlertSystem.java
+/Users/amanjain/Desktop/MSCS/SDP/Project_1/Real_time_smart_Alert_System_for_IOT_devices/src/main/java/com/example/WarningAlertStrategy.java
