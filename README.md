@@ -61,9 +61,35 @@ Decorator Pattern: Dynamically adds additional functionality to alerts, such as 
 
 `Decorator.java`: Adds dynamic behavior to alerts, such as SMS or email.
 
-Testing: Includes JUnit tests to ensure code reliability and correctness.
+# UML Diagram
 
-UML Diagram: Detailed class diagram provided for better understanding of the architecture.
+The project is structured around modular and scalable components represented in the UML diagram.
+
+The UML class diagram highlights the relationships between key modules such as IoTDeviceSimulator, EventManager, NotificationManager, and AlertManager.
+
+It captures the application of design patterns and encapsulates the functionalities and interactions of the primary components.
+
+Refer to the provided diagram for a detailed visual understanding of the architecture and class hierarchy.
+
+# Testing
+
+The project includes comprehensive unit tests to validate functionality and ensure robustness.
+
+JUnit Framework: Used to write and execute automated tests for all key components.
+
+Test Coverage: Includes 3–5 test cases for modules like `EventManager`, `NotificationManager`, and `AlertManager`.
+
+Test Objectives:
+Verify correct event logging and sourcing.
+
+Ensure notifications are sent dynamically based on observer updates.
+
+Validate alert escalation strategies using various inputs.
+
+To run tests, execute:
+```bash
+mvn clean test
+```
 
 # Compilation and Execution
 
