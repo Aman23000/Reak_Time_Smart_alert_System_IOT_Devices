@@ -1,43 +1,83 @@
+# Real-Time Smart Alert System for IoT Devices
+
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
 | Name         | AMAN JAIN                  |
-| Date         | 09/23/2024                 |
+| Date         | 12/03/2024                 |
 | Course       | Fall                       |
-| Assignment # | 1                          |
 
-# Assignment Overview
 
-This project implements a **Fully Automatic Beverage Vending Machine** that allows users to select from a variety of beverages and add condiments. It calculates the final cost based on the selected beverage and condiments. The machine brews various coffee drinks (Espresso, Americano, Latte Macchiato) and tea drinks (Black Tea, Green Tea, Yellow Tea).
+# Project Overview
+
+The Real-Time Smart Alert System for IoT Devices is a robust, scalable solution designed to manage real-time alerts for Internet of Things (IoT) devices. It identifies critical events and notifies users dynamically, enhancing response time and reliability in IoT ecosystems.
 
 # GitHub Repository Link:
-[https://github.com/Aman23000/SDP_Assignment_1.git](https://github.com/Aman23000/SDP_Assignment_1.git)
 
-# Implementation Description
+# Key Features 
 
-The project centers around two key classes: 
+IoT Device Simulator: Generates real-time test data for simulation and testing.
 
-1. **Beverage**: This abstract base class defines common attributes for all beverages. It has two abstract subclasses:
-   - **Coffee**: For coffee drinks like Espresso, Americano, and Latte Macchiato.
-   - **Tea**: For tea drinks like Black Tea, Green Tea, and Yellow Tea.
+Event Manager: Logs device events using the Event Sourcing Pattern.
 
-   Each drink type extends its respective abstract class and inherits predefined properties and behaviors.
+Notification Manager: Sends real-time notifications using the Observer Pattern.
 
-2. **AutomaticBeverageVendingMachine**: This class handles key operations, such as:
-   - **brew(String beverageName)**: Creates a specific beverage object based on the input.
-   - **addCondiments(Beverage beverage, String condiment, int qty)**: Adds condiments like milk or sugar to the selected beverage, with a maximum of 3 units per condiment.
-   - **calculateCostOfBeverage(Beverage beverage)**: Calculates the total cost by adding the base cost of the beverage to the cost of the condiments.
+Alert Manager: Escalates critical alerts based on predefined strategies using the Strategy Pattern.
 
-### Flexibility
-The design is flexible because new beverages can be easily added by extending the **Coffee** or **Tea** classes. The **brew** method can be extended to support new drink types without requiring major changes.
+Enhanced Notifications: Adds dynamic behaviors (e.g., email, SMS) to alerts using the Decorator Pattern.
 
-### Simplicity and Understandability
-The code is straightforward, with clear method names like **brew**, **addCondiments**, and **calculateCostOfBeverage**, making it easy to maintain. Each class has a focused responsibility, which improves readability.
+# Workflow
 
-### Avoidance of Duplicated Code
-Code duplication is avoided by centralizing common logic in the **Beverage** class. This ensures that shared attributes (e.g., milk, sugar, cost) are defined in one place and inherited by all subclasses, improving maintainability and reducing bugs.
+IoT devices generate event data.
 
-### Design Patterns
-The project uses the **Factory Method** pattern in the **brew** method. This pattern allows the **AutomaticBeverageVendingMachine** to create different beverage objects based on user input, making the system easy to extend with new beverages in the future.
+The Event Manager logs the data.
+
+The Notification Manager sends appropriate alerts.
+
+The Alert Manager escalates alerts based on type and priority.
+
+Additional alert features (e.g., format changes or additional notification channels) are dynamically added via decorators.
+
+# Design Pattern Used
+
+Event Sourcing Pattern: Efficiently logs real-time events for better traceability.
+
+Observer Pattern: Dynamically updates notifications to subscribed systems or users.
+
+Strategy Pattern: Enables flexible alert escalation strategies.
+
+Decorator Pattern: Dynamically adds additional functionality to alerts, such as support for new notification channels or formats.
+
+# Project Structure
+ Modules:
+
+`IoTDeviceSimulator.java`: Simulates real-time IoT device data.
+
+`EventManager.java`: Captures and manages event data.
+
+`NotificationManager.java`: Processes and sends notifications.
+
+`AlertManager.java`: Manages and escalates critical alerts.
+
+`Decorator.java`: Adds dynamic behavior to alerts, such as SMS or email.
+
+Testing: Includes JUnit tests to ensure code reliability and correctness.
+
+UML Diagram: Detailed class diagram provided for better understanding of the architecture.
+
+# Compilation and Execution
+
+Prerequisites
+
+Java Development Kit (JDK 1.8 or later).
+
+Maven (for project build and dependencies).
+
+Git (for version control).
+
+Clone the repository: git clone [repository-url]
+cd [repository-folder]
+
+Run the application: SmartAlertSystemMain
 
 # Maven Commands
 
@@ -116,6 +156,28 @@ mvn checkstyle:checkstyle
 The HTML page will be found at the following location:
 `target/site/checkstyle.html`
 
+# Challenges
 
+Handling real-time event data efficiently.
+
+Configuring tools like SpotBugs and resolving code warnings.
+
+# Learnings
+
+mportance of modular design for maintainability.
+
+Best practices in software testing and debugging.
+
+# Future Enhancements
+
+Adding push notifications and voice calls as new notification channels.
+
+Integrating predictive analytics to forecast potential device failures.
+
+Creating real-time dashboards for enhanced IoT monitoring.
+
+Expanding to cloud platforms for better scalability.
+
+Introducing customizable alert escalation strategies.
 
 
