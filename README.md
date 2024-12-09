@@ -12,6 +12,7 @@
 The Real-Time Smart Alert System for IoT Devices is a robust, scalable solution designed to manage real-time alerts for Internet of Things (IoT) devices. It identifies critical events and notifies users dynamically, enhancing response time and reliability in IoT ecosystems.
 
 # GitHub Repository Link:
+https://github.com/Aman23000/SDP_Final_Project_Amanjain.git
 
 # Key Features 
 
@@ -74,11 +75,16 @@ Maven (for project build and dependencies).
 
 Git (for version control).
 
-Clone the repository: git clone [repository-url]
+Clone the repository: 
+```bash
+git clone [repository-url]
 cd [repository-folder]
+```
 
-Run the application: SmartAlertSystemMain
-
+Run the application: 
+```bash
+SmartAlertSystemMain
+```
 # Maven Commands
 
 We’ll use Apache Maven to compile and run this project. You can install it from https://maven.apache.org/.
