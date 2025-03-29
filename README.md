@@ -3,9 +3,6 @@
 
 The Real-Time Smart Alert System for IoT Devices is a robust, scalable solution designed to manage real-time alerts for Internet of Things (IoT) devices. It identifies critical events and notifies users dynamically, enhancing response time and reliability in IoT ecosystems.
 
-# GitHub Repository Link:
-https://github.com/Aman23000/SDP_Final_Project_Amanjain.git
-
 # Key Features 
 
 IoT Device Simulator: Generates real-time test data for simulation and testing.
