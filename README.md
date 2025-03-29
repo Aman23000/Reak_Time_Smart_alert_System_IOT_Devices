@@ -1,12 +1,4 @@
 # Real-Time Smart Alert System for IoT Devices
-
-| CS-665       | Software Design & Patterns |
-|--------------|----------------------------|
-| Name         | AMAN JAIN                  |
-| Date         | 12/03/2024                 |
-| Course       | Fall                       |
-
-
 # Project Overview
 
 The Real-Time Smart Alert System for IoT Devices is a robust, scalable solution designed to manage real-time alerts for Internet of Things (IoT) devices. It identifies critical events and notifies users dynamically, enhancing response time and reliability in IoT ecosystems.
