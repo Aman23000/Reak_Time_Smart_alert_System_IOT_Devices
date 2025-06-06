@@ -1,44 +1,105 @@
-| CS-665       | Software Design & Patterns |
-|--------------|----------------------------|
-| Name         | AMAN JAIN                  |
-| Date         | 09/23/2024                 |
-| Course       | Fall                       |
-| Assignment # | 1                          |
+# Real-Time Smart Alert System for IoT Devices
+# Project Overview
 
-# Assignment Overview
+The Real-Time Smart Alert System for IoT Devices is a robust, scalable solution designed to manage real-time alerts for Internet of Things (IoT) devices. It identifies critical events and notifies users dynamically, enhancing response time and reliability in IoT ecosystems.
 
-This project implements a **Fully Automatic Beverage Vending Machine** that allows users to select from a variety of beverages and add condiments. It calculates the final cost based on the selected beverage and condiments. The machine brews various coffee drinks (Espresso, Americano, Latte Macchiato) and tea drinks (Black Tea, Green Tea, Yellow Tea).
+# Key Features 
 
-# GitHub Repository Link:
-[https://github.com/Aman23000/SDP_Assignment_1.git](https://github.com/Aman23000/SDP_Assignment_1.git)
+IoT Device Simulator: Generates real-time test data for simulation and testing.
 
-# Implementation Description
+Event Manager: Logs device events using the Event Sourcing Pattern.
 
-The project centers around two key classes: 
+Notification Manager: Sends real-time notifications using the Observer Pattern.
 
-1. **Beverage**: This abstract base class defines common attributes for all beverages. It has two abstract subclasses:
-   - **Coffee**: For coffee drinks like Espresso, Americano, and Latte Macchiato.
-   - **Tea**: For tea drinks like Black Tea, Green Tea, and Yellow Tea.
+Alert Manager: Escalates critical alerts based on predefined strategies using the Strategy Pattern.
 
-   Each drink type extends its respective abstract class and inherits predefined properties and behaviors.
+Enhanced Notifications: Adds dynamic behaviors (e.g., email, SMS) to alerts using the Decorator Pattern.
 
-2. **AutomaticBeverageVendingMachine**: This class handles key operations, such as:
-   - **brew(String beverageName)**: Creates a specific beverage object based on the input.
-   - **addCondiments(Beverage beverage, String condiment, int qty)**: Adds condiments like milk or sugar to the selected beverage, with a maximum of 3 units per condiment.
-   - **calculateCostOfBeverage(Beverage beverage)**: Calculates the total cost by adding the base cost of the beverage to the cost of the condiments.
+# Workflow
 
-### Flexibility
-The design is flexible because new beverages can be easily added by extending the **Coffee** or **Tea** classes. The **brew** method can be extended to support new drink types without requiring major changes.
+IoT devices generate event data.
 
-### Simplicity and Understandability
-The code is straightforward, with clear method names like **brew**, **addCondiments**, and **calculateCostOfBeverage**, making it easy to maintain. Each class has a focused responsibility, which improves readability.
+The Event Manager logs the data.
 
-### Avoidance of Duplicated Code
-Code duplication is avoided by centralizing common logic in the **Beverage** class. This ensures that shared attributes (e.g., milk, sugar, cost) are defined in one place and inherited by all subclasses, improving maintainability and reducing bugs.
+The Notification Manager sends appropriate alerts.
 
-### Design Patterns
-The project uses the **Factory Method** pattern in the **brew** method. This pattern allows the **AutomaticBeverageVendingMachine** to create different beverage objects based on user input, making the system easy to extend with new beverages in the future.
+The Alert Manager escalates alerts based on type and priority.
 
+Additional alert features (e.g., format changes or additional notification channels) are dynamically added via decorators.
+
+# Design Pattern Used
+
+Event Sourcing Pattern: Efficiently logs real-time events for better traceability.
+
+Observer Pattern: Dynamically updates notifications to subscribed systems or users.
+
+Strategy Pattern: Enables flexible alert escalation strategies.
+
+Decorator Pattern: Dynamically adds additional functionality to alerts, such as support for new notification channels or formats.
+
+# Project Structure
+ Modules:
+
+`IoTDeviceSimulator.java`: Simulates real-time IoT device data.
+
+`EventManager.java`: Captures and manages event data.
+
+`NotificationManager.java`: Processes and sends notifications.
+
+`AlertManager.java`: Manages and escalates critical alerts.
+
+`Decorator.java`: Adds dynamic behavior to alerts, such as SMS or email.
+
+# UML Diagram
+
+The project is structured around modular and scalable components represented in the UML diagram.
+
+The UML class diagram highlights the relationships between key modules such as IoTDeviceSimulator, EventManager, NotificationManager, and AlertManager.
+
+It captures the application of design patterns and encapsulates the functionalities and interactions of the primary components.
+
+Refer to the provided diagram for a detailed visual understanding of the architecture and class hierarchy.
+
+# Testing
+
+The project includes comprehensive unit tests to validate functionality and ensure robustness.
+
+JUnit Framework: Used to write and execute automated tests for all key components.
+
+Test Coverage: Includes 3–5 test cases for modules like `EventManager`, `NotificationManager`, and `AlertManager`.
+
+Test Objectives:
+Verify correct event logging and sourcing.
+
+Ensure notifications are sent dynamically based on observer updates.
+
+Validate alert escalation strategies using various inputs.
+
+To run tests, execute:
+```bash
+mvn clean test
+```
+
+# Compilation and Execution
+
+Prerequisites
+
+Java Development Kit (JDK 1.8 or later).
+
+Maven (for project build and dependencies).
+
+Git (for version control).
+
+Clone the repository: 
+```bash
+git clone [repository-url]
+cd [repository-folder]
+```
+
+Run the application: 
+```bash
+SmartAlertSystemMain
+```
 # Maven Commands
 
 We’ll use Apache Maven to compile and run this project. You can install it from https://maven.apache.org/.
@@ -116,6 +177,28 @@ mvn checkstyle:checkstyle
 The HTML page will be found at the following location:
 `target/site/checkstyle.html`
 
+# Challenges
 
+Handling real-time event data efficiently.
+
+Configuring tools like SpotBugs and resolving code warnings.
+
+# Learnings
+
+mportance of modular design for maintainability.
+
+Best practices in software testing and debugging.
+
+# Future Enhancements
+
+Adding push notifications and voice calls as new notification channels.
+
+Integrating predictive analytics to forecast potential device failures.
+
+Creating real-time dashboards for enhanced IoT monitoring.
+
+Expanding to cloud platforms for better scalability.
+
+Introducing customizable alert escalation strategies.
 
 
