@@ -14,6 +14,7 @@ public class SmartAlertSystemMain {
         IoTDevice device1 = new IoTDevice("Device1", eventManager);
         IoTDevice device2 = new IoTDevice("Device2", eventManager);
 
+
         for (int i = 0; i < 5; i++) {
             device1.simulateEvent();
             device2.simulateEvent();
@@ -21,7 +22,7 @@ public class SmartAlertSystemMain {
             for (Event event : eventManager.getEventLog()) {
                 if ("ALERT".equals(event.getType())) {
                     alertManager.triggerAlert(event.getDeviceId(), event.getMessage());
-                    notificationManager.alert(event.getMessage());
+                    notificationManager.alert(event.getMessage ());
                 }
             }
             System.out.println("----------");
